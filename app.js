@@ -1,94 +1,85 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+var fs = require('fs');
 
 // TODO: Create an array of questions for user input
-const questions = [];
-// Question one - description
-inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'Description',
-      message: 'Enter a brief description of your app'
-    }
-  ])
-  .then(answers => console.log(answers));
-// Question two - table of contents
-  inquirer
-  .prompt([
-    {
-      type: 'list',
-      name: 'Table of Contents',
-      message: 'Enter table of contents information'
-    }
-  ])
-  .then(answers => console.log(answers));
-  // Question three - Installation
-  inquirer
-  .prompt([
-    {
-      type: 'list',
-      name: 'Installtion',
-      message: 'Installation steps'
-    }
-  ])
-  .then(answers => console.log(answers));
-  // Question four - Usage
-  inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'Usage',
-      message: 'What is the purpose of this project?'
-    }
-  ])
-  .then(answers => console.log(answers));
+// Question one - Description
+inquirer.prompt([ {
+        Question1: {
+        type: 'input',
+        name: 'description',
+        message: 'Enter a brief description of your app',
+        default: 'no input selected'
+    },
+        // Question two - table of contents
+        Question2: {
+        type: 'list',
+        name: 'contents',
+        message: 'Enter table of contents information',
+        default: 'no input selected'
+    },
 
-  // Question five - License
-  inquirer
-  .prompt([
-    {
-      type: 'list',
-      name: 'License Type',
-      message: 'What type of license is used?'
-    }
-  ])
-  .then(answers => console.log(answers));
+        // Question three - Installation
+        Question3: {
+        type: 'list',
+        name: 'installtion',
+        message: 'Installation steps',
+        default: 'no input selected'
+    },
 
-  // Question six - Contributing
-  inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'Contributors',
-      message: 'Who contributed to this project?'
-    }
-  ])
-  .then(answers => console.log(answers));
+        // Question four - Usage
+        Question4: {
+        type: 'input',
+        name: 'usage',
+        message: 'What is the purpose of this project?',
+        default: 'no input selected'
+    },
 
-  // Question seven - Tests
-  inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'Test',
-      message: 'What tests are used?'
-    }
-  ])
-  .then(answers => console.log(answers));
+        // Question five - License
+        Question5: {
+        type: 'list',
+        name: 'license',
+        message: 'What type of license is used?',
+        default: 'no input selected'
+    },
+        // Question six - Contributing
+        Question6: {
+        type: 'input',
+        name: 'contributors',
+        message: 'Who contributed to this project?',
+        default: 'no input selected'
+  },
+        // Question seven - Tests
+        Question7: {
+        type: 'input',
+        name: 'test',
+        message: 'What tests are used?',
+        default: 'no input selected'
+  },
+        // Question eight - Questions
+        Question8: {
+        type: 'input',
+        name: 'questions',
+        message: 'Questions? Enter here',
+        default: 'no input selected'
+  }} 
+])
+.then(({
+description,
+contents,
+installation,
+usage,
+license,
+contributors,
+test,
+questions
+})=>{
 
-  // Question eight - Questions
-  inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'Questions',
-      message: 'Questions? Enter here.'
-    }
-  ])
-  .then(answers => console.log(answers));
+})
 
- 
+const promptUser = () => {
+    return inquirer.prompt([
+    ])};
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
@@ -97,4 +88,4 @@ function writeToFile(fileName, data) {}
 function init() {}
 
 // Function call to initialize app
-init();
+init(); 
