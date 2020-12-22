@@ -1,6 +1,7 @@
-# aw
+# README Generator
     # Description:
-    aw
+    Generates a README.md file based on user input. 
+    
     # Table of Contents
     * [Installation](#installation)
     * [Usage](#usage)
@@ -9,21 +10,16 @@
     * [tests](#test)
     
     # Installation:
-    aw
+    * 1. Install Node
+    * 2. Pull down app.js file
 
     ## Usage:
-    aw
+    * Expedite creation of README.md for projects 
 
     ## Contributors:
-    aw
-
-    ## Tests:
-    aw
-
-    ### License:
-    Microsoft Public License
+    * Evan-Wer
 
     ## Contact Information:
-    * aw
-    * aw
-    * undefined
+    * https://github.com/Evan-Wer
+    * <evan.g.werner@gmail.com>
+    * P: 610 608 3597
