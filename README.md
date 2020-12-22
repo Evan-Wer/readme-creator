@@ -20,6 +20,6 @@
     * Evan-Wer
 
     ## Contact Information:
-    * https://github.com/Evan-Wer
-    * <evan.g.werner@gmail.com>
+    * [GitHub](<https://github.com/Evan-Wer>)
+    * [mailto](mailto:evan.g.werner@gmail.com)
     * P: 610 608 3597
