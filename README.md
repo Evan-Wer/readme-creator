@@ -1,25 +1,25 @@
 # README Generator
-    # Description:
-    Generates a README.md file based on user input. 
+# Description:
+  Generates a README.md file based on user input. 
     
-    # Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [contributions](#contribution)
-    * [License](#license)
-    * [tests](#test)
+# Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [contributions](#contribution)
+  * [License](#license)
+  * [tests](#test)
     
-    # Installation:
-    * 1. Install Node
-    * 2. Pull down app.js file
+ # Installation:
+   * 1. Install Node
+   * 2. Pull down app.js file
 
-    ## Usage:
-    * Expedite creation of README.md for projects 
+ ## Usage:
+  * Expedite creation of README.md for projects 
 
-    ## Contributors:
-    * Evan-Wer
+ ## Contributors:
+  * Evan-Wer
 
-    ## Contact Information:
-    * [GitHub] https://github.com/Evan-Wer
-    * [email] evan.g.werner@gmail.com
-    * P: 610 608 3597
+ ## Contact Information:
+  * [GitHub] https://github.com/Evan-Wer
+  * [email] evan.g.werner@gmail.com
+  * P: 610 608 3597
