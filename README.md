@@ -10,8 +10,11 @@
   * [tests](#test)
     
  # Installation:
-   * 1. Install Node
-   * 2. Pull down app.js file
+   1. Install Node.js from https://nodejs.org 
+   2. Pull app.js file from repository
+   3. Run from preferred CLI by performing the following steps:
+    -Navigate to the folder containing the app.js file
+    -Run command:  **node app.js**
 
  ## Usage:
   * Expedite creation of README.md for projects 
@@ -22,4 +25,4 @@
  ## Contact Information:
   * [GitHub] https://github.com/Evan-Wer
   * [email] evan.g.werner@gmail.com
-  * P: 610 608 3597
+  * [Phone] 610-608-3597
