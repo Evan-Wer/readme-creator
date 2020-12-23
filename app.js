@@ -1,12 +1,16 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-var fs = require('fs');
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
 const tableOfContentsArray = ["Yes", "No"]
 const licensesArray = ["Apache license 2.0", "ISC", "Microsoft Public License", "MIT", "Open Software License 3.0"]
 
-inquirer.prompt([ 
+// TODO: Create a function to write README file
+
+// TODO: Create a function to initialize app
+function init() {
+    inquirer.prompt([ 
         {
         // Question one - app name/title
         type: 'input',
@@ -60,7 +64,7 @@ inquirer.prompt([
         type: 'input',
         name: 'test',
         message: 'What tests are used?',
-        default: 'Pending user input'
+        default: 'None'
   },
         // Question eight - Git name
        {
@@ -98,50 +102,47 @@ email,
 number
 })=>{
     const readMe = `# ${title}
-    # Description:
-    ${description}
-    # Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [contributions](#contribution)
-    * [License](#license)
-    * [tests](#test)
+
+## Description:
+  ${description}
+
+## Table of Contents
+ * [Installation](#installation)
+ * [Usage](#usage)
+ * [contributions](#contribution)
+ * [License](#license)
+ * [tests](#test)
     
-    # Installation:
-    ${installation}
+## Installation:
+${installation}
 
-    ## Usage:
-    ${usage}
+## Usage:
+${usage}
 
-    ## Contributors:
-    ${contributors}
+## Contributors:
+${contributors}
 
-    ## Tests:
-    ${test}
+## Tests:
+${test}
 
-    ### License:
-    ${license}
+### License:
+${license}
 
-    ## Contact Information:
-    * ${user}
-    * ${email}
-    * ${number}`;
+## Contact Information:
+ * ${user}
+ * ${email}
+ * ${number}`;
     
     writeToFile(title, readMe);
 });
+};
 
-
-// TODO: Create a function to write README file
 function writeToFile(fileName, info) {
-    fs.writeFileSync('README.md', info, (err) => {
+    fs.writeFileSync('./README.md', info, (err) => {
         if (err)  throw err;
         }
     )
-    console.log("ReadMe successfully created!")
-};
-
-// TODO: Create a function to initialize app
-function init() {};
+    console.log("ReadMe successfully created!")};
 
 // Function call to initialize app
-init(); 
+init();  
