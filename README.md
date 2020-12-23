@@ -1,4 +1,4 @@
-# README Generator
+# README.md Generator
 # Description:
   Generates a README.md file based on user input. 
     
